@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -34,117 +35,149 @@
             android:textStyle="bold" />
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/btnCheckin"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="5dp"
-        android:layout_weight="1"
-        android:background="#d9201b"
-        android:clickable="true"
-        android:orientation="horizontal"
-        android:padding="16dp">
+    <com.andexert.library.RippleView
+        android:id="@+id/more7"
+        rv_centered="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/more8">
 
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center_vertical"
-            android:layout_marginRight="16dp"
-            android:src="@drawable/checkin" />
+        <LinearLayout
+            android:id="@+id/btnCheckin"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="#d9201b"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:padding="16dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:text="CHECK IN"
-            android:textColor="@android:color/white"
-            android:textSize="20sp" />
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/checkin" />
 
-    </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="CHECK IN"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
 
-    <LinearLayout
-        android:id="@+id/btnAboutDilo"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="10dp"
-        android:layout_weight="1"
-        android:background="#d9201b"
-        android:clickable="true"
-        android:orientation="horizontal"
-        android:padding="16dp">
+        </LinearLayout>
+    </com.andexert.library.RippleView>
 
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center_vertical"
-            android:layout_marginRight="16dp"
-            android:src="@drawable/aboutdilo" />
+    <com.andexert.library.RippleView
+        android:id="@+id/more5"
+        rv_centered="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/more6">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:text="ABOUT DILO MALANG"
-            android:textColor="@android:color/white"
-            android:textSize="20sp" />
+        <LinearLayout
+            android:id="@+id/btnAboutDilo"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="#d9201b"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:padding="16dp">
 
-    </LinearLayout>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/aboutdilo" />
 
-    <LinearLayout
-        android:id="@+id/btnAboutDev"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="10dp"
-        android:layout_weight="1"
-        android:background="#d9201b"
-        android:clickable="true"
-        android:orientation="horizontal"
-        android:padding="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="ABOUT DILO MALANG"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
 
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center_vertical"
-            android:layout_marginRight="16dp"
-            android:src="@drawable/aboutdev" />
+        </LinearLayout>
+    </com.andexert.library.RippleView>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:text="ABOUT DEVELOPER"
-            android:textColor="@android:color/white"
-            android:textSize="20sp" />
+    <com.andexert.library.RippleView
+        android:id="@+id/more3"
+        rv_centered="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/more4">
 
-    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/btnAboutDev"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="#d9201b"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:padding="16dp">
 
-    <LinearLayout
-        android:id="@+id/btnVisit"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="10dp"
-        android:layout_weight="1"
-        android:background="#d9201b"
-        android:clickable="true"
-        android:orientation="horizontal"
-        android:padding="16dp">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/aboutdev" />
 
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center_vertical"
-            android:layout_marginRight="16dp"
-            android:src="@drawable/visit" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="ABOUT DEVELOPER"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:text="VISIT WEB"
-            android:textColor="@android:color/white"
-            android:textSize="20sp" />
+        </LinearLayout>
+    </com.andexert.library.RippleView>
 
-    </LinearLayout>
+    <com.andexert.library.RippleView
+        android:id="@+id/more"
+        rv_centered="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/more2">
+
+        <LinearLayout
+            android:id="@+id/btnVisit"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="#d9201b"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/visit" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="VISIT WEB"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </com.andexert.library.RippleView>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -161,5 +194,6 @@
             android:textColor="@android:color/black"
             android:textSize="20sp"
             android:textStyle="bold" />
+
     </LinearLayout>
 </LinearLayout>
