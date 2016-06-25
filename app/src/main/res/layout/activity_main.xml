@@ -14,20 +14,20 @@
 
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="140dp"
+        android:layout_height="0dp"
         android:layout_gravity="center"
-        android:layout_weight="1"
+        android:layout_weight="5"
         android:src="@drawable/dilo" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_weight="1"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:text="Selamat Datang di DILo Malang"
             android:textAlignment="center"
             android:textColor="@android:color/black"
@@ -40,12 +40,14 @@
         rv_centered="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:layout_toLeftOf="@+id/more8">
 
         <LinearLayout
             android:id="@+id/btnCheckin"
             android:layout_width="match_parent"
             android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
             android:layout_marginTop="5dp"
             android:layout_weight="1"
             android:background="#d9201b"
@@ -76,13 +78,14 @@
         rv_centered="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:layout_toLeftOf="@+id/more6">
 
         <LinearLayout
             android:id="@+id/btnAboutDilo"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:layout_weight="1"
             android:background="#d9201b"
             android:clickable="true"
@@ -112,13 +115,14 @@
         rv_centered="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:layout_toLeftOf="@+id/more4">
 
         <LinearLayout
             android:id="@+id/btnAboutDev"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:layout_weight="1"
             android:background="#d9201b"
             android:clickable="true"
@@ -148,13 +152,14 @@
         rv_centered="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:layout_toLeftOf="@+id/more2">
 
         <LinearLayout
             android:id="@+id/btnVisit"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:layout_weight="1"
             android:background="#d9201b"
             android:clickable="true"
@@ -181,14 +186,14 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_weight="1"
-        android:orientation="horizontal">
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:text="Check in untuk Menggunakan Fasilitas DILo Malang"
             android:textAlignment="center"
             android:textColor="@android:color/black"
